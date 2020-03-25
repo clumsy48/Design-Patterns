@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class SingletonLazy implements Serializable,Cloneable {
 
-    private static SingletonLazy instance;
+    private static volatile SingletonLazy instance;
 
     private SingletonLazy(){
 
